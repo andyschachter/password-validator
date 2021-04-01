@@ -39,10 +39,22 @@ const numCheck = (val) => {
   return false
 }
 
-console.log(numCheck('password'))
+console.log(numCheck('password1'))
+
+const charCheck = (val) => {
+  const specialChars = "!@#$%&*()'+,-./:;<=>?[]^_`~{|}";
+
+  for (let i = 0; i < val.length; i++) {
+    if (specialChars.indexOf(val[i]) >= 0) return true
+  }
+
+  return false
+}
+
+console.log(charCheck('password@'))
 
 const validatePassword = (val) => {
-  if (lengthCheck(val) && lowerCheck(val) && upperCheck(val) && numCheck(val)) return true
+  if (lengthCheck(val) && lowerCheck(val) && upperCheck(val) && numCheck(val) && charCheck(val)) return true
 
   return false
 }
