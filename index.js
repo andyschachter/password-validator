@@ -15,8 +15,6 @@ const lowerCheck = (val) => {
   return false
 }
 
-console.log(lowerCheck('PASSWORd'))
-
 const upperCheck = (val) => {
 
   for (let i = 0; i < val.length; i++) {
@@ -28,8 +26,6 @@ const upperCheck = (val) => {
   return false
 }
 
-console.log(upperCheck('passworD'))
-
 const numCheck = (val) => {
 
   for (let i = 0; i < val.length; i++) {
@@ -38,8 +34,6 @@ const numCheck = (val) => {
 
   return false
 }
-
-console.log(numCheck('password1'))
 
 const charCheck = (val) => {
   const specialChars = "!@#$%&*()'+,-./:;<=>?[]^_`~{|}";
