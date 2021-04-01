@@ -30,9 +30,19 @@ const upperCheck = (val) => {
 
 console.log(upperCheck('passworD'))
 
+const numCheck = (val) => {
+
+  for (let i = 0; i < val.length; i++) {
+    if (!isNaN(val.charAt(i)) && val[i] !== ' ') return true
+  }
+
+  return false
+}
+
+console.log(numCheck('password'))
 
 const validatePassword = (val) => {
-  if (lengthCheck(val) && lowerCheck(val) && upperCheck(val)) return true
+  if (lengthCheck(val) && lowerCheck(val) && upperCheck(val) && numCheck(val)) return true
 
   return false
 }
