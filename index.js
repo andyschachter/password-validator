@@ -29,7 +29,7 @@ const upperCheck = (val) => {
 const numCheck = (val) => {
 
   for (let i = 0; i < val.length; i++) {
-    if (!isNaN(val.charAt(i)) && val[i] !== ' ') return true
+    if (!isNaN(val[i]) && val[i] !== ' ') return true
   }
 
   return false
