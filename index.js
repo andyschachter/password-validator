@@ -45,8 +45,6 @@ const charCheck = (val) => {
   return false
 }
 
-console.log(charCheck('password@'))
-
 const validatePassword = (val) => {
   if (lengthCheck(val) && lowerCheck(val) && upperCheck(val) && numCheck(val) && charCheck(val)) return true
 
